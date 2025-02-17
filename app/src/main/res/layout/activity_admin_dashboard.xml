@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F8F8FF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Buku"
+        android:autoSizeTextType="uniform"
+        android:textColor="#4682B4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnManageProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:text="Kelola Pengguna"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnViewStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Stok Barang"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#000000"/>
+
+    <Button
+        android:id="@+id/btnLogoutAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>
