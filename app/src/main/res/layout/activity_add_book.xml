@@ -1,38 +1,58 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <TextView
+        android:id="@+id/TambahTugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Tugas"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
     <EditText
         android:id="@+id/Title"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:hint="Tambahkan Deskripsi" />
+        android:hint="Tambahkan Deskripsi"
+        android:textColorHint="@color/black"/>
 
     <EditText
         android:id="@+id/Author"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tanggal" />
+        android:hint="Tanggal"
+        tools:ignore="TouchTargetSizeCheck"
+        android:textColorHint="@color/black"/>
 
     <EditText
         android:id="@+id/Year"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Waktu" />
+        android:hint="Waktu"
+        tools:ignore="TouchTargetSizeCheck"
+        android:textColorHint="@color/black"/>
 
     <EditText
         android:id="@+id/gff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="kategori" />
+        android:hint="kategori"
+        tools:ignore="TouchTargetSizeCheck"
+        android:textColorHint="@color/black"/>
 
     <Button
         android:id="@+id/saveButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Simpan Tugas" />
+        android:text="Simpan Tugas"
+        android:backgroundTint="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
 
 
 </LinearLayout>

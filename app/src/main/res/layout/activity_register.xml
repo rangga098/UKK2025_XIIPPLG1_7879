@@ -1,29 +1,71 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center"
-    android:background="@drawable/iu">
+    android:background="@drawable/jhg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Register"
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/registerNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/registerUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username"
-        android:textColorHint="@color/black"/>
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/registerPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:inputType="textPassword"
         android:textColorHint="@color/black"
-        android:inputType="textPassword" />
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/registerKonfirmasiPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Konfirmasi Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/registerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register" />
+        android:text="Register"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Kembali"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 </LinearLayout>

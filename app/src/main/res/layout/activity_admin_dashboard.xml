@@ -1,5 +1,7 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,9 +11,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Daftar Buku"
+        android:text="List Buku"
         android:autoSizeTextType="uniform"
-        android:textColor="#4682B4"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_gravity="center"/>
@@ -21,26 +23,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#000000"
-        android:text="Kelola Pengguna"
-        android:textColor="@color/white" />
+        android:text="Buat Tugas Baru"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="232dp" />
 
     <Button
         android:id="@+id/btnViewStock"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tambah Stok Barang"
-        android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
+        android:text="Riwayat Tugas"
         android:textColor="@color/white"
-        android:backgroundTint="#000000"/>
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="282dp" />
 
     <Button
         android:id="@+id/btnLogoutAdmin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:backgroundTint="#000000"
         android:text="Logout"
         android:textColor="@color/white"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="329dp" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
