@@ -11,7 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText registerNama, registerUsername, registerPassword, registerKonfirmasiPassword;
-    private Button registerButton, kembali;
+    private Button registerButton;
+    private Button kembali;
 
     @SuppressLint("MissingInflatedId")
     @Override

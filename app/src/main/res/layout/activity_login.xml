@@ -18,7 +18,8 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="25dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
     <EditText
         android:id="@+id/username"
@@ -27,7 +28,7 @@
         android:hint="Username"
         android:textColorHint="@color/black"
         android:textSize="16dp"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="Autofill,HardcodedText,SpUsage,TextFields,TextSizeCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/password"
@@ -37,17 +38,18 @@
         android:inputType="textPassword"
         android:textColorHint="@color/black"
         android:textSize="16dp"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="Autofill,HardcodedText,SpUsage,TextSizeCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
         android:text="Login"
+        android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/black"/>
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
     <TextView
         android:id="@+id/registerLink"
@@ -57,7 +59,7 @@
         android:gravity="center"
         android:text="Don't have an account? Register"
         android:textColor="@color/black"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="HardcodedText,KeyboardInaccessibleWidget,TouchTargetSizeCheck" />
 
 
 </LinearLayout>
